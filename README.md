@@ -70,7 +70,7 @@ http://your-server/install.php
 4. **Set your Shelly device IP** in `live.php` and `eintragen.php`:
 
 ```php
-$shelly_ip = "192.168.0.68";
+$shelly_ip = "192.168.xxx.xxx";
 ```
 
 5. **Open `index.php`** in your browser to see live data and log new charging sessions.
@@ -80,7 +80,7 @@ $shelly_ip = "192.168.0.68";
 ## Usage
 
 1. Enter the **current odometer reading** in km.  
-2. Click **“Shelly-KWh abrufen & speichern”** to fetch the latest Shelly kWh and calculate charged energy.  
+2. Click **“Shelly-KWh abrufen & speichern”** to fetch the latest Shelly kWh and calculate charged energy and consumption.  
 3. See live metrics updating every second.  
 4. Optionally expand the **“Weitere Details anzeigen”** section to monitor device status.
 
