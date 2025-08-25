@@ -1,10 +1,6 @@
 <?php
 
-$host = "localhost";
-$user = "EVShelly";
-$pass = "Fqt[.tyvBaeZY@Ts";
-$db = "EVShelly";
-$shelly_ip = "192.168.0.68";
+include './config/config.php';
 
 $conn = new mysqli($host, $user, $pass, $db);
 if ($conn->connect_error) die("DB Verbindung fehlgeschlagen: " . $conn->connect_error);

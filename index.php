@@ -1,9 +1,6 @@
 <?php
-// DB Settings
-$host = "localhost";
-$user = "EVShelly";
-$pass = "Fqt[.tyvBaeZY@Ts";
-$db = "EVShelly";
+
+include './config/config.php';
 
 // Verbindung
 $conn = new mysqli($host, $user, $pass, $db);
@@ -18,7 +15,7 @@ $result = $conn->query("SELECT * FROM ladehistorie ORDER BY datum DESC");
 <head>
     <title>Ladehistorie Elektroauto</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
 <h2>Ladehistorie Elektroauto</h2>

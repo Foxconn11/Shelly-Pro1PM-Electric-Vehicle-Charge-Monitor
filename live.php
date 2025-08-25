@@ -1,9 +1,6 @@
 <?php
-$host = "localhost";
-$user = "EVShelly";
-$pass = "Fqt[.tyvBaeZY@Ts";
-$db = "EVShelly";
-$shelly_ip = "192.168.0.68";
+
+include './config/config.php';
 
 // DB Verbindung
 $conn = new mysqli($host, $user, $pass, $db);

@@ -88,14 +88,14 @@ $shelly_ip = "192.168.xxx.xxx";
 
 ## Planned Changes
 
-- Change everything to English for better readability
-- Improve the installation script
-- Add the ability to switch to miles
-- Add a central configuration file for:
-  - Database connection settings
-  - Shelly device IP
-  - Preferred units (km/miles, kWh/Wh)
-  - Update intervals
+- [ ] Change everything to English for better readability
+- [x] Improve the installation script
+- [ ] Add the ability to switch to miles
+- [x] Add a central configuration file for:
+    - Database connection settings
+    - Shelly device IP
+    - Preferred units (km/miles, kWh/Wh)
+    - Update intervals
 
 ---
 
