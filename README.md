@@ -79,7 +79,7 @@ http://your-server/install.php
 
 ## Planned Changes
 
-- [ ] Change everything to English for better readability
+- [ ] Add Language Support
 - [x] Improve the installation script
 - [ ] Add the ability to switch to miles
 - [x] Add a central configuration file for:
@@ -87,6 +87,13 @@ http://your-server/install.php
     - Shelly device IP
     - Preferred units (km/miles, kWh/Wh)
     - Update intervals
+- [ ] Add Settings Page
+
+---
+
+## Current known Issues to resolve
+
+none
 
 ---
 
