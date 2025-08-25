@@ -11,38 +11,39 @@
 
 ## Features
 
-- **Live Data Display** (updates every second)  
-  - Current charged kWh  
-  - Charged kWh since last entry (and in Wh for live visualization)  
-  - Current power (W)  
-  - Grid voltage (V)  
-  - Current (A)  
-  - Frequency (Hz)  
+- **Live Data Display** (updates every second)
+  - Current charged kWh
+  - Charged kWh since last entry
+  - Current power (W)
+  - Grid voltage (V)
+  - Current (A)
+  - Frequency (Hz)
 
-- **Optional Expanded Details** (click to show)  
-  - Shelly internal temperature (°C)  
-  - Power factor  
-  - Switch state (ON/OFF)  
-  - WiFi signal strength (RSSI)  
-  - Cloud, MQTT, and WebSocket connection status  
-  - Uptime, free RAM, and free flash memory  
+- **Optional Expanded Details** (click to show)
+  - Shelly internal temperature (°C)
+  - Power factor
+  - Switch state (ON/OFF)
+  - WiFi signal strength (RSSI)
+  - Cloud, MQTT, and WebSocket connection status
+  - Uptime, free RAM, and free flash memory
 
-- **Database Logging**  
-  - Enter your car's odometer (km) and log kWh from Shelly  
-  - Calculates charged kWh since last entry  
-  - Computes consumption (kWh per 100 km)  
-  - Stored in a MySQL table (`ladehistorie`) for historical analysis  
+- **Database Logging**
+  - Enter your car´s odometer (km) and log kWh from Shelly
+  - Calculates charged kWh since last entry
+  - Computes consumption (kWh per 100 km)
+  - Stored in a MySQL table (`ladehistorie`) for historical analysis
 
-- **Auto-updating Dashboard**  
-  - Live values refresh every second  
-  - Fully responsive design with dark theme and white Arial font  
+- **Auto-updating Dashboard**
+  - Live values refresh every second
+  - Fully responsive design with dark theme and white Arial font
 
-- **Easy Installation**  
-  - `install.php` sets up the database table automatically  
-  - Works with existing MySQL databases  
-  - Simple configuration for your Shelly device IP  
+- **Easy Installation**
+  - `install.php` sets up the database table automatically
+  - Works with existing MySQL databases
+  - Simple configuration for your Shelly device IP
 
 ---
+
 
 ## Setup Instructions
 
@@ -52,36 +53,26 @@
 git clone https://github.com/Foxconn11/Shelly-Pro1PM-Electric-Vehicle-Charge-Monitor
 ```
 
-2. **Configure the database connection** in `live.php`, `index.php` and `eintragen.php`:
-
-```php
-$host = "localhost";
-$user = "db_user";
-$pass = "db_pass";
-$db = "db_name";
-```
-
-3. **Run `install.php`** once to create the database table:
+2. **Start the Installer Script in your Webbrowser**:
 
 ```
 http://your-server/install.php
 ```
 
-4. **Set your Shelly device IP** in `live.php` and `eintragen.php`:
+3. **Fill out the Credentials to your MySQL Database and ShellyIP**
 
-```php
-$shelly_ip = "192.168.xxx.xxx";
-```
+4. **Click on Run Installation**:
 
-5. **Open `index.php`** in your browser to see live data and log new charging sessions.
+5. **Done**
+
 
 ---
 
 ## Usage
 
-1. Enter the **current odometer reading** in km.  
-2. Click **“Shelly-KWh abrufen & speichern”** to fetch the latest Shelly kWh and calculate charged energy and consumption.  
-3. See live metrics updating every second.  
+1. Enter the **current odometer reading** in km.
+2. Click **“Shelly-KWh abrufen & speichern”** to fetch the latest Shelly kWh and calculate charged energy and consumption.
+3. See live metrics updating every second.
 4. Optionally expand the **“Weitere Details anzeigen”** section to monitor device status.
 
 ---
@@ -101,9 +92,9 @@ $shelly_ip = "192.168.xxx.xxx";
 
 ## Requirements
 
-- PHP 7.4+  
-- MySQL or MariaDB  
-- Shelly Pro 1 PM on the same network  
+- PHP 7.4+
+- MySQL or MariaDB
+- Shelly Pro 1 PM on the same network
 - Web server (Apache, Nginx, etc.)
 
 ---
@@ -111,4 +102,6 @@ $shelly_ip = "192.168.xxx.xxx";
 ## License
 
 See the `LICENSE` file for details.
+
+
 
