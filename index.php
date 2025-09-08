@@ -1,6 +1,7 @@
 <?php
 
 include './config/config.php';
+//$config = include __DIR__.'/config/config.php';
 
 // Verbindung
 $conn = new mysqli($host, $user, $pass, $db);
@@ -121,7 +122,7 @@ updateLiveKwh();
         let kmstand = $("#kmstand").val();
         if(kmstand == "") { alert("Bitte Kilometerstand eingeben"); return; }
 
-        $.post("eintragen.php", {kmstand: kmstand}, function(data) {
+        $.post("entry.php", {kmstand: kmstand}, function(data) {
             $("#historie").html(data);
             $("#kmstand").val("");
             updateLiveKwh();
